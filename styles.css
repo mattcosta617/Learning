@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background: gray;
+}
+
+#image_spot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#img_1 {
+    height: 450px;
+    width: 650px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#a1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
