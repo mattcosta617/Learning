@@ -1,0 +1,15 @@
+ body {
+     background: rgb(155, 155, 155);
+ }
+
+ ul {
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+ }
+
+ li {
+     padding-left: 10px;
+ }
+
+ 
