@@ -70,8 +70,8 @@ button{
 
 @keyframes drop{
     0%{opacity: 0}
-    70%{ transform: translateY(700px)}
-    100%{ transform: translateY(650px); opacity: 1;}
+    70%{ transform: translateY(500px)}
+    100%{ transform: translateY(450px); opacity: 1;}
 }
 
 @keyframes swing{
