@@ -12,4 +12,76 @@
      padding-left: 10px;
  }
 
- 
+ .cloud {
+     position: relative;
+     height: 200px;
+     width: 300px;
+     border-radius: 30%;
+ }
+
+ .cloud:nth-child(1){
+    width: 200px;
+    top: 100px;
+    opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+ }
+
+ .cloud:nth-child(2) {
+     width: 300px;
+     top: 0;
+     animation: wind 50s linear infinite reverse;
+ }
+
+ #welcome {
+    position: absolute;
+    top: 420px;
+    animation: welcome 12s both infinite linear, 
+    jump 3s 3s ease;
+
+ }
+
+ #rock {
+     height: 50px;
+     width: 75px;
+    background-color: rgb(186, 79, 79);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 35%;
+    box-shadow: 6px 6px rgb(52, 52, 52);
+    position: absolute;
+    top: 420px;
+    left: 35%;
+ }
+
+ #car {
+     height: 150px;
+     width: 175px;
+     border-radius: 50%;
+     position: absolute;
+     top: 500px;
+     animation-name: welcome;
+     animation-duration: 5s;
+     animation-fill-mode: both;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+ }
+
+
+
+ @keyframes welcome{
+     from{  transform: translateX(-500px)}
+     to{    transform: translateX(2000px)}
+ }
+
+ @keyframes wind{
+     from{left: -300px}
+     to{left: 100%}
+ }
+
+ @keyframes jump{
+     0%{ top: 420px }
+     50%{ top: 350px }
+     100%{ top: 420px}
+ }
