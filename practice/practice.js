@@ -1,8 +1,3 @@
+const target = document.getElementById("target");
 
-{
-    let age = 5;
-}
-
-age = age + 6;
-
-
+console.log(target);
